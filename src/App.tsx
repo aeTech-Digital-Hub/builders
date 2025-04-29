@@ -1,7 +1,14 @@
+import Head from "./components/layout/header";
+
+
 export default function App() {
   return (
-    <div>
-      <h1>Hello</h1>
+
+    <div className="m-0 p-0 h-screen">
+
+
+      <Head/>,
+     
     </div>
   
   )
