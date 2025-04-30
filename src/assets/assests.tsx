@@ -20,6 +20,7 @@ import volt from './images/home/volt.svg';
 import VOLTA from './images/home/VOLTA.svg';
 import logo from './images/home/logo.svg';
 import arrowDown from './images/home/arrowDown.png';
+import bg1 from './images/home/bg.jpg';
 
 // Group assets into logical categories (optional but recommended for large projects)
 const assets = {
@@ -51,6 +52,7 @@ const assets = {
     VOLTA,
     logo,
     arrowDown,
+    bg1,
   },
 };
 

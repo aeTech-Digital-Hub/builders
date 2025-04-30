@@ -1,4 +1,4 @@
-import Head from "./components/layout/header";
+import Hero from "./components/section/hero-section";
 
 
 export default function App() {
@@ -7,7 +7,8 @@ export default function App() {
     <div className="m-0 p-0 h-screen">
 
 
-      <Head/>,
+      
+      <Hero/>,
      
     </div>
   
