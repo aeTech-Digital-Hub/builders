@@ -1,5 +1,4 @@
 
-import PropertyCard from "./components/layout/card";
 import Landing from "./components/section/landingPage";
 
 export default function App() {
@@ -10,7 +9,7 @@ export default function App() {
 
       
       <Landing/>,
-      <PropertyCard/>,
+     
       
      
     </div>
