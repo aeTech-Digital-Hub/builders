@@ -21,6 +21,9 @@ import VOLTA from './images/home/VOLTA.svg';
 import logo from './images/home/logo.svg';
 import arrowDown from './images/home/arrowDown.png';
 import bg1 from './images/home/bg.jpg';
+import north from './images/home/Northern.svg';
+import graceView from './images/home/graceView.jpg';
+import plans from './images/home/plans.png'
 
 // Group assets into logical categories (optional but recommended for large projects)
 const assets = {
@@ -53,6 +56,9 @@ const assets = {
     logo,
     arrowDown,
     bg1,
+    north,
+    graceView,
+    plans
   },
 };
 

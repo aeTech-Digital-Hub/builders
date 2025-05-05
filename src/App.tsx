@@ -1,5 +1,6 @@
-import Hero from "./components/section/hero-section";
 
+import PropertyCard from "./components/layout/card";
+import Landing from "./components/section/landingPage";
 
 export default function App() {
   return (
@@ -8,7 +9,9 @@ export default function App() {
 
 
       
-      <Hero/>,
+      <Landing/>,
+      <PropertyCard/>,
+      
      
     </div>
   
