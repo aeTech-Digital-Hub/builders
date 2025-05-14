@@ -23,7 +23,7 @@ import arrowDown from './images/home/arrowDown.png';
 import bg1 from './images/home/bg.jpg';
 import north from './images/home/north.jpg';
 import graceView from './images/home/graceView.jpg';
-import plans from './images/home/plans.png';
+import plans from './images/home/plans.svg';
 import northMap from './images/home/northMap.svg';
 import ahafoMap from './images/home/ahafoMap.svg';
 import ahafo from './images/home/ahafo.jpg';
@@ -31,6 +31,14 @@ import instagram from './images/home/instagram.png';
 import linkedIn from './images/home/linkedin.png';
 import facebook from './images/home/facebook.png';
 import youtube from './images/home/youtube.png';
+import location from './images/home/location.svg';
+import bedroom from'./images/home/bedroom.svg';
+import kitchen from'./images/home/kitchen.svg';
+import washroom from'./images/home/washroom.svg';
+import sofa from'./images/home/sofa.svg';
+import plan2 from'./images/home/plan2.svg';
+import plan3 from'./images/home/plan3.svg';
+
 
 
 
@@ -75,7 +83,14 @@ const assets = {
     instagram,
     linkedIn,
     facebook,
-    youtube
+    youtube,
+    location,
+    bedroom,
+    kitchen,
+    washroom,
+    sofa,
+    plan2,
+    plan3,
   },
 };
 
