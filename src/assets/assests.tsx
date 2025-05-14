@@ -6,24 +6,34 @@ import team2 from './images/about/team2.svg';
 import team3 from './images/about/team3.svg';
 import started from './images/care/started.svg';
 import map from './images/contact/map.svg';
-import accra from './images/home/accra.svg';
-import bono_ahafo from './images/home/BONG-AHAFO.svg';
-import bono from './images/home/bono.svg';
+import accra from './images/home/Accra.svg';
+import bono from './images/home/bono.jpg';
+import bonoMap from './images/home/bonoMap.png';
 import community from './images/home/community.svg';
-import greater_accra from './images/home/Greater-Accra.svg';
+import greater_accra from './images/home/Greater_Accra.jpg';
 import heaven from './images/home/heaven.svg';
 import moory from './images/home/moory.svg';
 import plan from './images/home/plan.svg';
 import search2 from './images/home/search2.svg';
 import search_icon from './images/home/search-icon.svg';
-import volt from './images/home/volt.svg';
-import VOLTA from './images/home/VOLTA.svg';
+import volta from './images/home/volta.jpg';
+import voltaMap from './images/home/voltaMap.svg';
 import logo from './images/home/logo.svg';
 import arrowDown from './images/home/arrowDown.png';
 import bg1 from './images/home/bg.jpg';
-import north from './images/home/Northern.svg';
+import north from './images/home/north.jpg';
 import graceView from './images/home/graceView.jpg';
-import plans from './images/home/plans.png'
+import plans from './images/home/plans.png';
+import northMap from './images/home/northMap.svg';
+import ahafoMap from './images/home/ahafoMap.svg';
+import ahafo from './images/home/ahafo.jpg';
+import instagram from './images/home/instagram.png';
+import linkedIn from './images/home/linkedin.png';
+import facebook from './images/home/facebook.png';
+import youtube from './images/home/youtube.png';
+
+
+
 
 // Group assets into logical categories (optional but recommended for large projects)
 const assets = {
@@ -42,7 +52,7 @@ const assets = {
   },
   home: {
     accra,
-    bono_ahafo,
+    bonoMap,
     bono,
     community,
     greater_accra,
@@ -51,14 +61,21 @@ const assets = {
     plan,
     search2,
     search_icon,
-    volt,
-    VOLTA,
+    volta,
+    voltaMap,
     logo,
     arrowDown,
     bg1,
     north,
     graceView,
-    plans
+    plans,
+    northMap,
+    ahafoMap,
+    ahafo,
+    instagram,
+    linkedIn,
+    facebook,
+    youtube
   },
 };
 

@@ -9,6 +9,7 @@ export default {
 
       colors: {
         blue: '#1E305E',
+        dark_blue: '#0D162A',
         brown: '#CD9F70',
       }
     },
