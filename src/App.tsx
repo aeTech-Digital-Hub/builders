@@ -2,25 +2,18 @@
 
 import Landing from "./components/pages/landingPage";
 
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 export default function App() {
 
-  return (
+  const router = createBrowserRouter([
+    {
+      path : '/',
+      element: <Landing/>
+    },
 
-    <div className="m-0 p-0 h-screen">
 
+  ]);
 
-      
-      <Landing/>,
-      
-      
-      
-      
-     
-     
-      
-     
-    </div>
-  
-  )
+  return  <RouterProvider router={router}/>
 }
+
