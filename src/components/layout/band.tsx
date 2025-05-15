@@ -1,7 +1,7 @@
 
 
 
-
+import { Link } from "react-router-dom";
 
 const Band: React.FC = () => {
     return(
@@ -12,15 +12,15 @@ const Band: React.FC = () => {
         </div>
 
         <div className=" flex-grow text-white  bg-[#1E305E] px-12 py-10">
-          <div className="flex  gap-x-5 text-3xl  ">
-            <a>HOW TRUST IS BUILT</a>
-            <p>|</p>
-            <a>ABOUT US</a>
-            <p>|</p>
-            <a>OUR PROCESS</a>
-            <p>|</p>
-            <a>CUSTOMER CARE</a>
-          </div>
+        <div className="flex gap-x-5  text-3xl">
+  <Link to="#">HOW TRUST IS BUILT</Link>
+  <p>|</p>
+  <Link to="/about">ABOUT US</Link>
+  <p>|</p>
+  <Link to="#">OUR PROCESS</Link>
+  <p>|</p>
+  <Link to="#">CUSTOMER CARE</Link>
+</div>
         </div>
       </div>
 

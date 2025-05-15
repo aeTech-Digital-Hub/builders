@@ -38,6 +38,16 @@ import washroom from'./images/home/washroom.svg';
 import sofa from'./images/home/sofa.svg';
 import plan2 from'./images/home/plan2.svg';
 import plan3 from'./images/home/plan3.svg';
+import bg2 from'./images/home/bg2.jpg';
+import bg3 from'./images/home/bg3.jpg';
+import bg4 from'./images/home/bg4.jpg';
+import bg5 from'./images/home/bg5.jpg';
+import bg from './images/about/bg.jpg';
+import pics from './images/about/pictures.svg';
+
+
+
+
 
 
 
@@ -51,6 +61,8 @@ const assets = {
     team1,
     team2,
     team3,
+    bg,
+    pics
   },
   care: {
     started,
@@ -91,6 +103,11 @@ const assets = {
     sofa,
     plan2,
     plan3,
+    bg2,
+    bg3,
+    bg4,
+    bg5,
+
   },
 };
 
