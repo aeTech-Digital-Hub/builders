@@ -1,11 +1,18 @@
 import React from 'react';
 
-const RegionCard = ({ title, backgroundImage, icon, buttonText }) => {
+type RegionCardProps = {
+  title: string;
+  backgroundImage: string;
+  icon: string;
+  buttonText: string;
+};
+
+const RegionCard: React.FC<RegionCardProps> = ({ title, backgroundImage, icon, buttonText }) => {
   return (
     <div
       className="flex gap-[250px] items-center justify-center px-20 h-[50vh] bg-cover mb-6 bg-center"
       style={{
-        backgroundImage: ` url(${backgroundImage})`,
+        backgroundImage: `url(${backgroundImage})`,
       }}
     >
       {/* left */}
