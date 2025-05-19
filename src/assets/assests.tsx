@@ -1,4 +1,4 @@
-// Import all images from their respective paths
+
 import pictures from './images/about/pictures.svg';
 import story from './images/about/story.svg';
 import team1 from './images/about/team1.svg';
@@ -42,8 +42,13 @@ import bg2 from'./images/home/bg2.jpg';
 import bg3 from'./images/home/bg3.jpg';
 import bg4 from'./images/home/bg4.jpg';
 import bg5 from'./images/home/bg5.jpg';
-import bg from './images/about/bg.jpg';
-import pics from './images/about/pictures.svg';
+import bg from'./images/home/bg.jpg';
+import accraPlan from'./images/plan/housePlan.png';
+import filter from'./images/plan/filter.png';
+import image1 from'./images/plan/image1.svg';
+import image2 from'./images/plan/image2.svg';
+import image3 from'./images/plan/image3.svg';
+import bg6 from'./images/trust/bg6.jpg';
 
 
 
@@ -53,7 +58,7 @@ import pics from './images/about/pictures.svg';
 
 
 
-// Group assets into logical categories (optional but recommended for large projects)
+
 const assets = {
   about: {
     pictures,
@@ -62,11 +67,16 @@ const assets = {
     team2,
     team3,
     bg,
-    pics
+   
   },
   care: {
     started,
   },
+
+  trust: {
+   bg6,
+  },
+
   contact: {
     map,
   },
@@ -108,6 +118,15 @@ const assets = {
     bg4,
     bg5,
 
+  },
+
+
+  housePlan:{
+    accraPlan,
+    filter,
+    image1,
+    image2,
+    image3,
   },
 };
 
