@@ -3,6 +3,7 @@
 import About from "./components/pages/About";
 import HousePlane from "./components/pages/HousePlane";
 import Landing from "./components/pages/landingPage";
+import Care from "./components/pages/Care";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Trust from "./components/pages/Trust";
@@ -19,9 +20,13 @@ export default function App() {
       element: <About/>
     },
 
+    {
+      path : '/customer-care',
+      element: <Care/>
+    },
 
     {
-      path : '/trust-Us',
+      path : '/trust-us',
       element: <Trust/>
     },
 

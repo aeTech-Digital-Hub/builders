@@ -49,7 +49,16 @@ import image1 from'./images/plan/image1.svg';
 import image2 from'./images/plan/image2.svg';
 import image3 from'./images/plan/image3.svg';
 import bg6 from'./images/trust/bg6.jpg';
-
+import review from'./images/trust/reviews.svg';
+import circle from'./images/trust/circle.png';
+import live from'./images/trust/livability.svg';
+import house from'./images/trust/house.svg';
+import eff from'./images/trust/efficiency.svg';
+import energy from'./images/trust/efficient.svg';
+import dist from'./images/trust/distinction.svg';
+import star from'./images/trust/star-badge.svg';
+import bg8 from'./images/care/bg8.jpg';
+import image4 from'./images/care/images3.jpg';
 
 
 
@@ -71,10 +80,20 @@ const assets = {
   },
   care: {
     started,
+    image4,
+    bg8,
   },
 
   trust: {
    bg6,
+   review,
+   circle,
+   live,
+   house,
+   eff,
+   energy,
+   dist,
+   star
   },
 
   contact: {

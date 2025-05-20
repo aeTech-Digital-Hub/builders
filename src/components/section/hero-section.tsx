@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
       );
     }, 5000); // Change every 5 seconds
 
-    return () => clearInterval(interval); // Cleanup
+    return () => clearInterval(interval); 
   }, []);
 
   return (

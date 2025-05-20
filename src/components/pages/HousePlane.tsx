@@ -1,4 +1,3 @@
-import React from "react";
 import assets from "../../assets/assests";
 import Header from "../layout/header2";
 import HouseCard from "../layout/HouseCard"; // 
@@ -9,7 +8,7 @@ const HousePlane = () => {
       <Header />
       <div className="bg-[#DDE0E7] py-3 px-16 ">
         <div className="flex justify-between items-center">
-          <h1 className="font-bold text-black text-3xl">Greater Accra</h1>
+          <h1 className="font-bold text-black  leading-normal text-3xl">Greater Accra</h1>
           <div className="flex items-center gap-12">
             <button className="w-[230px] h-10 px-4 flex items-center gap-2 text-gray-500 text-2xl rounded-lg bg-white shadow-sm">
               <img

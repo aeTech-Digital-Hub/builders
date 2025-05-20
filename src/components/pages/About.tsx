@@ -7,8 +7,8 @@ const About: React.FC = () => {
 
     <div>
     <HeroLayout backgroundImage={assets.about.bg}>
-      <div className="text-white text-center">
-        <h1 className="text-5xl font-bold ">About Us at<br/>
+      <div className="text-white   text-center">
+        <h1 className="text-5xl font-bold  leading-normal">About Us at<br/>
          <span className="text-brown">Honest Builders</span> </h1>
       </div>
     </HeroLayout>
