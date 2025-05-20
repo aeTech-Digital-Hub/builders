@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 type RegionCardProps = {
   title: string;
@@ -7,7 +7,12 @@ type RegionCardProps = {
   buttonText: string;
 };
 
-const RegionCard: React.FC<RegionCardProps> = ({ title, backgroundImage, icon, buttonText }) => {
+const RegionCard: React.FC<RegionCardProps> = ({
+  title,
+  backgroundImage,
+  icon,
+  buttonText,
+}) => {
   return (
     <div
       className="flex gap-[250px] items-center justify-center px-20 h-[50vh] bg-cover mb-6 bg-center"
@@ -22,7 +27,11 @@ const RegionCard: React.FC<RegionCardProps> = ({ title, backgroundImage, icon, b
 
       {/* right */}
       <div className="flex flex-col items-center">
-        <img src={icon} alt={`${title} icon`} className="fill-current text-black" />
+        <img
+          src={icon}
+          alt={`${title} icon`}
+          className="fill-current text-black"
+        />
         <div>
           <button className="py-4 rounded-lg px-12 bg-blue text-white font-bold text-3xl">
             {buttonText}

@@ -7,7 +7,10 @@ interface BackgroundLayoutProps {
   children?: React.ReactNode;
 }
 
-const HeroLayout: React.FC<BackgroundLayoutProps> = ({ backgroundImage, children }) => {
+const HeroLayout: React.FC<BackgroundLayoutProps> = ({
+  backgroundImage,
+  children,
+}) => {
   return (
     <section className="flex flex-col h-screen overflow-hidden">
       <div

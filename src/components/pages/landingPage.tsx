@@ -5,173 +5,147 @@ import RegionCard from "../section/region";
 import Footer from "../layout/Footer";
 import PropertyCard from "../layout/leftSide";
 
-const Landing: React.FC=()=>{
-    return(
-        <section>
-        <Hero/>
+const Landing: React.FC = () => {
+  return (
+    <section>
+      <Hero />
 
-        <div className="flex px-12 gap-16 justify-between items-center py-20 " > 
-          
-{/* left */}
-            <div className="  ">
-                <h1 className="text-5xl text-[#625B71] font-semibold"> <span className="text-[#CD9F70]">EXPLORE</span> <br/>OUR COMMUNITY</h1>
-
-            </div>
-
-            {/* right */}
-            <div>
-                <img src={assets.home.community}/> 
-            </div>
-
+      <div className="flex px-12 gap-16 justify-between items-center py-20 ">
+        {/* left */}
+        <div className="  ">
+          <h1 className="text-5xl text-[#625B71] font-semibold">
+            {" "}
+            <span className="text-[#CD9F70]">EXPLORE</span> <br />
+            OUR COMMUNITY
+          </h1>
         </div>
 
+        {/* right */}
+        <div>
+          <img src={assets.home.community} />
+        </div>
+      </div>
 
-       
-
-        <div className=" mb-6 ">
+      <div className=" mb-6 ">
+        <RegionCard
+          title="Greater Accra"
+          backgroundImage={assets.home.greater_accra}
+          icon={assets.home.accra}
+          buttonText="Greater Accra"
+        />
 
         <RegionCard
-        title="Greater Accra"
-        backgroundImage={assets.home.greater_accra}
-        icon={assets.home.accra}
-        buttonText="Greater Accra"
-      />
+          title="Volta "
+          backgroundImage={assets.home.volta}
+          icon={assets.home.voltaMap}
+          buttonText="volta"
+        />
 
-<RegionCard
-        title="Volta "
-        backgroundImage={assets.home.volta}
-        icon={assets.home.voltaMap}
-        buttonText="volta"
-      />
+        <RegionCard
+          title="Northern "
+          backgroundImage={assets.home.north}
+          icon={assets.home.northMap}
+          buttonText="Nothern"
+        />
 
-<RegionCard
-        title="Northern "
-        backgroundImage={assets.home.north}
-        icon={assets.home.northMap}
-        buttonText="Nothern"
-      />
+        <RegionCard
+          title="Bono-Ahafo "
+          backgroundImage={assets.home.ahafo}
+          icon={assets.home.ahafoMap}
+          buttonText="Bono-Ahafo"
+        />
+      </div>
 
+      <div className="flex  ">
+        <div className=" w-1/3 flex justify-center  items-center bg-[#E9EAEF] font-semibold">
+          <div className="flex-col justify-center text-center  items-center px-20 ">
+            <h1 className="text-4xl ">
+              Get the best offers on your favorite locations in your account
+            </h1>
+            <p className="text-2xl mt-10">Get started</p>
 
-
-<RegionCard
-        title="Bono-Ahafo "
-        backgroundImage={assets.home.ahafo}
-        icon={assets.home.ahafoMap}
-        buttonText="Bono-Ahafo" 
-      />
-
-      
-
-
- 
-
-              
-        </div>
-
-
-        <div className="flex  ">
-            <div className=" w-1/3 flex justify-center  items-center bg-[#E9EAEF] font-semibold">  
-            <div className="flex-col justify-center text-center  items-center px-20 ">
-
-            <h1 className="text-4xl ">Get the best offers on your favorite locations in your account</h1>
-                <p className="text-2xl mt-10">Get started</p>
-
-              <div className="flex gap-12 justify-center items-center mt-10">               
-                 <button className="py-2 px-8 text-2xl text-center text-white rounded-lg bg-brown">Login</button>  or
-                  <button  className="py-2 px-8 text-2xl text-center text-white rounded-lg bg-blue">SignUp</button>
-</div>
+            <div className="flex gap-12 justify-center items-center mt-10">
+              <button className="py-2 px-8 text-2xl text-center text-white rounded-lg bg-brown">
+                Login
+              </button>{" "}
+              or
+              <button className="py-2 px-8 text-2xl text-center text-white rounded-lg bg-blue">
+                SignUp
+              </button>
             </div>
-              
- 
-            </div>
-                  {/* left */}
-                  
-                  <div className=" flex bg-[#B9BFCD]     w-full ">
-
-                  <PropertyCard
-  image={assets.home.graceView}
-  tagLeft="Western"
-  tagRight="C18,000"
-  title="Grace-View Meadows"
-  location="18,Maccaulay way"
-  city="Northern"
-  bedrooms={3}
-  sofas={2}
-  washrooms={4}
-  kitchens={2}
-  planImage={assets.home.plans}
-  planLink="#"
-/>
-
-<PropertyCard
-  image={assets.home.graceView}
-  tagLeft="Western"
-  tagRight="C18,000"
-  title="Grace-View Meadows"
-  location="18,Maccaulay way"
-  city="Northern"
-  bedrooms={3}
-  sofas={2}
-  washrooms={4}
-  kitchens={2}
-  planImage={assets.home.plan2}
-  planLink="#"
-/>
-
-
-<PropertyCard
-  image={assets.home.graceView}
-  tagLeft="Western"
-  tagRight="C18,000"
-  title="Grace-View Meadows"
-  location="18,Maccaulay way"
-  city="Northern"
-  bedrooms={3}
-  sofas={2}
-  washrooms={4}
-  kitchens={2}
-  planImage={assets.home.plan3}
-  planLink="#"
-/>
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-   
-    
+          </div>
         </div>
+        {/* left */}
 
-        <div className="flex justify-end">
-  <div className="font-semibold text-xl flex">
-    <div className="py-3 text-brown  px-8 bg-blue">
-      <a href="#">Recommended</a>
-    </div>
+        <div className=" flex bg-[#B9BFCD]     w-full ">
+          <PropertyCard
+            image={assets.home.graceView}
+            tagLeft="Western"
+            tagRight="C18,000"
+            title="Grace-View Meadows"
+            location="18,Maccaulay way"
+            city="Northern"
+            bedrooms={3}
+            sofas={2}
+            washrooms={4}
+            kitchens={2}
+            planImage={assets.home.plans}
+            planLink="#"
+          />
 
-    <div className="flex bg-[#DDE0E7]  text-[#00000080] py-3 px-6">
-      <a href="#" className="px-6">Favorite</a>
-      <a  href="#" className="px-6">Recent Viewing</a>
-    </div>
-  </div>
-</div>
+          <PropertyCard
+            image={assets.home.graceView}
+            tagLeft="Western"
+            tagRight="C18,000"
+            title="Grace-View Meadows"
+            location="18,Maccaulay way"
+            city="Northern"
+            bedrooms={3}
+            sofas={2}
+            washrooms={4}
+            kitchens={2}
+            planImage={assets.home.plan2}
+            planLink="#"
+          />
 
-        <Plan/>
-        <Footer/>
+          <PropertyCard
+            image={assets.home.graceView}
+            tagLeft="Western"
+            tagRight="C18,000"
+            title="Grace-View Meadows"
+            location="18,Maccaulay way"
+            city="Northern"
+            bedrooms={3}
+            sofas={2}
+            washrooms={4}
+            kitchens={2}
+            planImage={assets.home.plan3}
+            planLink="#"
+          />
+        </div>
+      </div>
 
+      <div className="flex justify-end">
+        <div className="font-semibold text-xl flex">
+          <div className="py-3 text-brown  px-8 bg-blue">
+            <a href="#">Recommended</a>
+          </div>
 
-      
+          <div className="flex bg-[#DDE0E7]  text-[#00000080] py-3 px-6">
+            <a href="#" className="px-6">
+              Favorite
+            </a>
+            <a href="#" className="px-6">
+              Recent Viewing
+            </a>
+          </div>
+        </div>
+      </div>
 
-               </section>
-    )
-}
+      <Plan />
+      <Footer />
+    </section>
+  );
+};
 
-
-export default Landing ;
+export default Landing;

@@ -9,9 +9,6 @@ const backgroundImages = [
   assets.home.bg3,
   assets.home.bg4,
   assets.home.bg5,
-
-
-  
 ];
 
 const Hero: React.FC = () => {
@@ -19,19 +16,21 @@ const Hero: React.FC = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        (prevIndex + 1) % backgroundImages.length
+      setCurrentImageIndex(
+        (prevIndex) => (prevIndex + 1) % backgroundImages.length
       );
     }, 5000); // Change every 5 seconds
 
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, []);
 
   return (
     <section className="flex flex-col h-screen overflow-hidden">
       <div
         className="w-full h-full bg-cover bg-center relative transition-all duration-1000 ease-in-out"
-        style={{ backgroundImage: `url(${backgroundImages[currentImageIndex]})` }}
+        style={{
+          backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
+        }}
       >
         <Head />
         <div className="flex items-center justify-center h-full">
