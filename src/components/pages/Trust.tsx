@@ -23,11 +23,49 @@ const Trust = () => {
         </p>
       </div>
 
-      <div className="px-16 py-28 items-center flex bg-blue ">
-        <div className="w-1/3 ">
+      <div className=" flex  px-28 py-16 items-center  gap-[280px] bg-blue ">
+        <div className=" flex-col  w-1/5 ">
           <img src={assets.trust.review} />
 
-          <p className="text-white">See reviews from our satisfied customers</p>
+          <p className="  text-white  text-center text-2xl">
+            See reviews from our satisfied customers
+          </p>
+        </div>
+
+        <div className=" flex  gap-12">
+          <div className="  w-[380px] h-[380px]  py-3  rounded-3xl shadow-lg  bg-[#DDE0E7]">
+            {/* Inner Slate Box */}
+            <div className="flex flex-col items-center rounded-xl border-brown border bg-[#DDE0E7] gap-6 px-6  w-[90%] mx-auto  text-center">
+              <p className="text-2xl mt-3 text-center font-semibold">
+                Top Quality <br />
+                <img src={assets.trust.stars} />
+              </p>
+              <p className="text-xl  text-center">
+                Everyone, and I mean everyone; from the managers, to the worker
+                and non-staff were very professional. The house is so gorgeous
+                my wife can't stop gushing over it. Quality is out of this
+                world. Top job!.
+              </p>
+              <p>Efisah. J</p>
+            </div>
+          </div>
+
+          <div className=" flex  w-[380px] h-[380px]  py-3  rounded-3xl shadow-lg  bg-[#DDE0E7]">
+            {/* Inner Slate Box */}
+            <div className="flex flex-col items-center rounded-xl border-brown border bg-[#DDE0E7] gap-6 px-6  w-[90%] mx-auto  text-center">
+              <p className="text-2xl mt-3 text-center font-semibold">
+                Top Quality <br />
+                <img src={assets.trust.stars} />
+              </p>
+              <p className="text-xl  text-center">
+                Everyone, and I mean everyone; from the managers, to the worker
+                and non-staff were very professional. The house is so gorgeous
+                my wife can't stop gushing over it. Quality is out of this
+                world. Top job!.
+              </p>
+              <p>Efisah. J</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -47,7 +85,7 @@ const Trust = () => {
         />
       </div>
 
-      <div className="flex p-20 justify-between items-center  bg-[#B9BFCD]">
+      <div className="flex py-20 px-28 justify-between items-center  bg-[#B9BFCD]">
         <div className="flex-col text-center w-1/5 ">
           <img src={assets.trust.house} />
 

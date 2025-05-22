@@ -68,6 +68,8 @@ import phase from "./images/process/phase.svg";
 import phase1 from "./images/process/phase1.svg";
 import phase2 from "./images/process/phase2.svg";
 import construct from "./images/process/construction.svg";
+import stars from "./images/trust/star.png";
+
 
 
 
@@ -114,6 +116,7 @@ const assets = {
     energy,
     dist,
     star,
+    stars,
   },
 
   contact: {

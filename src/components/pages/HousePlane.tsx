@@ -8,7 +8,7 @@ const HousePlane = () => {
       <Header />
       <div className="bg-[#DDE0E7] py-3 px-16 ">
         <div className="flex justify-between items-center">
-          <h1 className="font-bold text-black  leading-normal text-3xl">
+          <h1 className="font-bold text-black  leading-normal  text-3xl">
             Greater Accra
           </h1>
           <div className="flex items-center gap-12">
