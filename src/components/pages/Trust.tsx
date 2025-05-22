@@ -90,7 +90,7 @@ const Trust = () => {
       </div>
 
       <div className="py-16">
-        <div className="w-1/2 mx-auto py-6 rounded-xl bg-[#DDE0E7]">
+        <div className="w-1/2 mx-auto py-6 rounded-3xl shadow-lg  bg-[#DDE0E7]">
           {/* Inner Slate Box */}
           <div className="flex flex-col items-center rounded-xl border-brown border bg-[#DDE0E7] gap-12 px-16 py-6 w-[90%] mx-auto  text-center">
             <p className="text-5xl font-semibold">

@@ -58,8 +58,38 @@ import dist from "./images/trust/distinction.svg";
 import star from "./images/trust/star-badge.svg";
 import bg8 from "./images/care/bg8.jpg";
 import image4 from "./images/care/images3.jpg";
+import image5 from "./images/contact/image3.png";
+import bg9 from "./images/process/bg9.jpg";
+import team from "./images/process/team.png";
+import left from "./images/process/arrow-left.svg";
+import right from "./images/process/arrow-right.svg";
+import selection from "./images/process/selection.png";
+import phase from "./images/process/phase.svg";
+import phase1 from "./images/process/phase1.svg";
+import phase2 from "./images/process/phase2.svg";
+import construct from "./images/process/construction.svg";
+
+
+
+
+
+
+
 
 const assets = {
+  
+  process: {
+   bg9,
+   team,
+   left,
+   right,
+   selection,
+   phase,
+   phase1,
+   phase2,
+   construct,
+  },
+  
   about: {
     pictures,
     story,
@@ -88,6 +118,7 @@ const assets = {
 
   contact: {
     map,
+    image5,
   },
   home: {
     accra,
