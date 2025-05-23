@@ -166,10 +166,10 @@ of communication.</p>
         <div className="w-1/2 mx-auto py-6  rounded-3xl bg-[#DDE0E7]">
           {/* Inner Slate Box */}
           <div className="flex flex-col items-center rounded-xl border-brown border bg-[#DDE0E7] gap-12 px-16 py-6 w-[90%] mx-auto  text-center">
-            <p className="text-5xl font-semibold">
+            <p className="text-xl font-semibold">
               MAKE AN INFORMED <span className="text-brown ">CHOICE</span>{" "}
             </p>
-            <p className="text-2xl">
+            <p className="text-xl">
               We back ourselves up to deliver and bring the best out of
               anything. Making a choice on quality should never be questioned.
             </p>

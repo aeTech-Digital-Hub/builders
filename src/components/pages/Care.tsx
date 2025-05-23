@@ -34,7 +34,7 @@ const Care = () => {
         style={{ backgroundImage: `url(${assets.care.image4})` }}
       >
         <div className=" flex  flex-col items-center w-2/6 mx-auto">
-          <h1 className="text-5xl font-semibold text-center text-white">
+          <h1 className="text-xl font-semibold text-center text-white">
             Don't wait for long,
             <br /> let's get <span className="text-brown">started</span>
           </h1>

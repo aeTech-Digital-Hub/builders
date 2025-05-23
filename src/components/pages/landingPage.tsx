@@ -4,16 +4,17 @@ import Plan from "../section/Plan";
 import RegionCard from "../section/region";
 import Footer from "../layout/Footer";
 import PropertyCard from "../layout/leftSide";
+import Gallery from "../section/Gallery";
 
 const Landing: React.FC = () => {
   return (
     <section>
       <Hero />
 
-      <div className="flex px-12 gap-16 justify-between items-center py-20 ">
+      <div className="flex px-28 gap-16 justify-between items-center py-20 ">
         {/* left */}
         <div className="  ">
-          <h1 className="text-5xl text-[#625B71] font-semibold">
+          <h1 className="text-xl text-[#625B71] font-semibold">
             {" "}
             <span className="text-[#CD9F70]">EXPLORE</span> <br />
             OUR COMMUNITY
@@ -59,17 +60,17 @@ const Landing: React.FC = () => {
       <div className="flex  ">
         <div className=" w-1/3 flex justify-center  items-center bg-[#E9EAEF] font-semibold">
           <div className="flex-col justify-center text-center  items-center px-20 ">
-            <h1 className="text-4xl ">
+            <h1 className="text-xl ">
               Get the best offers on your favorite locations in your account
             </h1>
-            <p className="text-2xl mt-10">Get started</p>
+            <p className="text-xl mt-10">Get started</p>
 
             <div className="flex gap-12 justify-center items-center mt-10">
-              <button className="py-2 px-8 text-2xl text-center text-white rounded-lg bg-brown">
+              <button className="py-2 px-8 text-xl text-center text-white rounded-lg bg-brown">
                 Login
               </button>{" "}
               or
-              <button className="py-2 px-8 text-2xl text-center text-white rounded-lg bg-blue">
+              <button className="py-2 px-8 text-xl text-center text-white rounded-lg bg-blue">
                 SignUp
               </button>
             </div>
@@ -125,7 +126,7 @@ const Landing: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex justify-end">
+      <div className="flex justify-end mb-24">
         <div className="font-semibold text-xl flex">
           <div className="py-3 text-brown  px-8 bg-blue">
             <a href="#">Recommended</a>
@@ -141,6 +142,8 @@ const Landing: React.FC = () => {
           </div>
         </div>
       </div>
+
+     <Gallery/>
 
       <Plan />
       <Footer />

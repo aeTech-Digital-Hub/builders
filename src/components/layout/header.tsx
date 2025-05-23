@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 const Head: React.FC=()=>{
     return(
         <header className="px-28 bg-[#0D162A33] ">
-            <div className="flex flex-row  items-center justify-between">
+            <div className="flex flex-row  items-center gap-[198px]">
                 <div>  <a href='#'><img src ={assest.home.logo}/></a>
                 </div>
 
-                <ul className="flex space-x-16 text-white items-center text-2xl">
+                <ul className="flex space-x-16 text-white items-center text-xl">
       <li>
         <Link to="#" className="flex items-center hover:text-blue-500 gap-1">
           Find A Home

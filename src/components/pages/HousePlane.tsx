@@ -8,7 +8,7 @@ const HousePlane = () => {
       <Header />
       <div className="bg-[#DDE0E7] py-3 px-16 ">
         <div className="flex justify-between items-center">
-          <h1 className="font-bold text-black  leading-normal  text-3xl">
+          <h1 className="font-bold text-black  leading-normal  text-xl">
             Greater Accra
           </h1>
           <div className="flex items-center gap-12">
@@ -20,7 +20,7 @@ const HousePlane = () => {
               />
               Search
             </button>
-            <button className="flex items-center hover:text-brown  gap-3 text-2xl">
+            <button className="flex items-center hover:text-brown  gap-3 text-xl">
               <img src={assets.housePlan.filter} alt="filter icon" />
               <span className="text-brown underline">Filter</span>
             </button>

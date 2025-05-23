@@ -7,7 +7,7 @@ const About: React.FC = () => {
     <div>
       <HeroLayout backgroundImage={assets.about.bg}>
         <div className="text-white   text-center">
-          <h1 className="text-5xl font-bold  leading-normal">
+          <h1 className="text-xl font-bold  leading-normal">
             About Us at
             <br />
             <span className="text-brown">Honest Builders</span>{" "}
@@ -16,7 +16,7 @@ const About: React.FC = () => {
       </HeroLayout>
 
       <div className="w-2/3 mx-auto mt-12 ">
-        <p className="text-center font-normal text-2xl ">
+        <p className="text-center font-normal text-[32px] ">
           For nearly 10 years, we've heard and witnessed the heartbreaking
           stories of disappointment from those in the diaspora. Just as
           important to us, we've built an honest system—providing the highest
@@ -34,7 +34,7 @@ const About: React.FC = () => {
       </div>
 
       <div className="w-2/3 mx-auto   ">
-        <p className="text-center font-normal  text-2xl  mb-6 ">
+        <p className="text-center font-normal text-[32px]   mb-6 ">
           Behind it all is our culture of exceptional service. We flourish by
           exceeding our clients' expectations. We aim to establish a reputation
           throughout Ghana as the trusted building company for your home and
@@ -43,7 +43,7 @@ const About: React.FC = () => {
       </div>
 
       <div className="w-1/3 mx-auto py-20 ">
-        <h1 className="text-5xl text-center font-bold">
+        <h1 className="text-xl text-center font-bold">
           MEET THE <span className="text-brown"> TEAM</span>
         </h1>
 
@@ -51,7 +51,12 @@ const About: React.FC = () => {
           Get up close and personal and know more about our people and why you
           can trust your work with us.
         </p>
+
+
+       
       </div>
+
+      
 
       {/* our story */}
 

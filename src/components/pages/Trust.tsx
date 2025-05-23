@@ -7,7 +7,7 @@ const Trust = () => {
     <div>
       <HeroLayout backgroundImage={assets.trust.bg6}>
         <div className="text-white text-center">
-          <h1 className="text-5xl font-bold leading-normal ">
+          <h1 className="text-xl font-bold leading-normal ">
             How Trust <br />
             Is
             <span className="text-brown px-3">Built</span>{" "}
