@@ -1,10 +1,11 @@
 import pictures from "./images/about/pictures.svg";
 import story from "./images/about/story.svg";
 import team1 from "./images/about/team1.jpg";
-import team2 from "./images/about/team2.svg";
-import team3 from "./images/about/team3.svg";
+import team2 from "./images/about/team2.jpg";
+import team3 from "./images/about/team3.jpg";
+import team4 from "./images/about/team4.jpg";
+import team5 from "./images/about/team5.jpg";
 import back from "./images/about/back.jpg";
-
 import started from "./images/care/started.svg";
 import map from "./images/contact/map.svg";
 import accra from "./images/home/accra.svg";
@@ -43,7 +44,6 @@ import bg2 from "./images/home/bg2.jpg";
 import bg3 from "./images/home/bg3.jpg";
 import bg4 from "./images/home/bg4.jpg";
 import bg5 from "./images/home/bg5.jpg";
-
 import bg10 from "./images/home/bg9.jpg";
 import bg from "./images/home/bg.jpg";
 import accraPlan from "./images/plan/housePlan.png";
@@ -73,29 +73,21 @@ import phase1 from "./images/process/phase1.svg";
 import phase2 from "./images/process/phase2.svg";
 import construct from "./images/process/construction.svg";
 import stars from "./images/trust/star.png";
-
-
-
-
-
-
-
-
+import badge from "./images/trust/badge.png";
 
 const assets = {
-  
   process: {
-   bg9,
-   team,
-   left,
-   right,
-   selection,
-   phase,
-   phase1,
-   phase2,
-   construct,
+    bg9,
+    team,
+    left,
+    right,
+    selection,
+    phase,
+    phase1,
+    phase2,
+    construct,
   },
-  
+
   about: {
     pictures,
     story,
@@ -104,6 +96,8 @@ const assets = {
     team3,
     bg,
     back,
+    team4,
+    team5,
   },
   care: {
     started,
@@ -122,6 +116,7 @@ const assets = {
     dist,
     star,
     stars,
+    badge,
   },
 
   contact: {

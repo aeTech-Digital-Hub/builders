@@ -14,9 +14,9 @@ const Landing: React.FC = () => {
       <div className="flex px-28 gap-16 justify-between items-center py-20 ">
         {/* left */}
         <div className="  ">
-          <h1 className="text-xl text-[#625B71] font-semibold">
+          <h1 className=" text-[#625B71] text-[48px]  font-semibold">
             {" "}
-            <span className="text-[#CD9F70]">EXPLORE</span> <br />
+            <span className="text-[#CD9F70] ">EXPLORE</span> <br />
             OUR COMMUNITY
           </h1>
         </div>
@@ -60,10 +60,10 @@ const Landing: React.FC = () => {
       <div className="flex  ">
         <div className=" w-1/3 flex justify-center  items-center bg-[#E9EAEF] font-semibold">
           <div className="flex-col justify-center text-center  items-center px-20 ">
-            <h1 className="text-xl ">
+            <h1 className="text-[30px] font-semibold ">
+              <p className="text-xl mt-10">Get started</p>
               Get the best offers on your favorite locations in your account
             </h1>
-            <p className="text-xl mt-10">Get started</p>
 
             <div className="flex gap-12 justify-center items-center mt-10">
               <button className="py-2 px-8 text-xl text-center text-white rounded-lg bg-brown">
@@ -127,8 +127,8 @@ const Landing: React.FC = () => {
       </div>
 
       <div className="flex justify-end mb-24">
-        <div className="font-semibold text-xl flex">
-          <div className="py-3 text-brown  px-8 bg-blue">
+        <div className="font-semibold text-[14px] flex">
+          <div className="py-3 text-brown font-semibold  px-8 bg-blue">
             <a href="#">Recommended</a>
           </div>
 
@@ -143,7 +143,7 @@ const Landing: React.FC = () => {
         </div>
       </div>
 
-     <Gallery/>
+      <Gallery />
 
       <Plan />
       <Footer />

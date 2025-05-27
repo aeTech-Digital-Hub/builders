@@ -22,7 +22,7 @@ const RegionCard: React.FC<RegionCardProps> = ({
     >
       {/* left */}
       <div>
-        <h1 className="text-5xl text-brown font-bold">{title}</h1>
+        <h1 className="text-[48px] text-brown font-bold">{title}</h1>
       </div>
 
       {/* right */}
@@ -33,7 +33,7 @@ const RegionCard: React.FC<RegionCardProps> = ({
           className="fill-current text-black"
         />
         <div>
-          <button className="py-4 rounded-lg px-12 bg-blue text-white font-bold text-3xl">
+          <button className="py-4 rounded-lg px-12 bg-blue text-white font-bold text-xl">
             {buttonText}
           </button>
         </div>

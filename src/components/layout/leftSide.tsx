@@ -36,7 +36,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         {/* top */}
         <div className="relative">
           <img src={image} className="rounded-lg" />
-          <div className="w-full bottom-0 absolute text-xl text-white py-4 bg-[#00000066] flex justify-between px-4">
+          <div className="w-full bottom-0 absolute text-[14px] text-white py-4 bg-[#00000066] flex justify-between px-4">
             <p>{tagLeft}</p>
             <p>{tagRight}</p>
           </div>

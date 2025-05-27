@@ -1,6 +1,7 @@
 import HeroLayout from "../section/hero-layout";
 import assets from "../../assets/assests";
 import Footer from "../layout/Footer";
+import TeamCardRotator from "../section/Team";
 
 const About: React.FC = () => {
   return (
@@ -42,12 +43,12 @@ const About: React.FC = () => {
         </p>
       </div>
 
-      <div className="w-1/3 mx-auto py-20 ">
-        <h1 className="text-xl text-center font-bold">
+      <div className="w-3/5 mx-auto py-20 ">
+        <h1 className="text-[48px] text-center font-bold">
           MEET THE <span className="text-brown"> TEAM</span>
         </h1>
 
-        <p className="text-2xl text-center  mt-6">
+        <p className="text-[32px] text-center  mt-6">
           Get up close and personal and know more about our people and why you
           can trust your work with us.
         </p>
@@ -56,19 +57,19 @@ const About: React.FC = () => {
        
       </div>
 
-      
+      <TeamCardRotator/>
 
       {/* our story */}
 
-      <div className="flex ">
+      <div className="flex mt-16 ">
         <div className="  flex flex-col w-2/3 bg-black px-10 justify-center  text-white">
-          <h1 className="text-5xl font-bold">Our Story</h1>
-          <p className="mt-2 font-semibold">
+          <h1 className="text-[64px] font-bold">Our Story</h1>
+          <p className="mt-2 font-semibold ">
             FILLING A NEED (This is a wife's commitment)
           </p>
 
           <div className="  mt-12">
-            <p className="text-xl">
+            <p className="text-[28px]">
               If you know my husband, he's a servant leader who knows he's
               called to serve. No matter the need—whether it is one-on-one
               coaching, mentoring young men, serving the communities, or simply
