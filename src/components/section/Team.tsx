@@ -44,8 +44,8 @@
 
 // export default TeamCard;
 
-import React, { useState, useEffect } from "react";
-import TeamCard from "../layout/TeamCard"; // Adjust path as needed
+import { useState, useEffect } from "react";
+import TeamCard from "../layout/TeamCard"; 
 import assets from "../../assets/assests";
 
 const data = [
