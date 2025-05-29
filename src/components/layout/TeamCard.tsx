@@ -27,13 +27,43 @@ const TeamCard: React.FC<TeamCardProps> = ({
   role3,
 }) => {
   return (
+    
+    <div className="relative w-full h-auto flex justify-center overflow-hidden">
+    {/* Background container with border and padding */}
     <div
-      className="relative w-full h-auto flex justify-center overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: `url(${assets.about.bg})` }}
-    >
+      className="absolute inset-0 bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${assets.about.back})`,
+        borderRadius: '35px',
+        border: '1px solid #000000',
+        top: '20px',
+        bottom: '20px',
+        left: '20px',
+        right: '20px',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
+      }}
+    />
+
+
+      {/* Color overlay (new element) */}
+      <div 
+        className="absolute inset-0"
+        style={{
+          backgroundColor: 'rgba(30, 48, 94, 0.8)', // #1E305E at 80% opacity
+          borderRadius: '35px',
+          top: '20px',
+          bottom: '20px',
+          left: '20px',
+          right: '20px',
+        }}
+      />
+      
+      
       {/* Card 1 - Left side */}
       {image1 && name1 && role1 && (
-        <div className="absolute left-[-190px] top-16 w-[380px] py-14 rounded-[40px] border bg-white shadow-md z-0">
+        
+        <div className="absolute left-[-190px] top-[150px] w-[380px] py-14 rounded-[40px] border bg-white shadow-md z-0">
           <div className="flex flex-col gap-3">
             <div className="text-center">
               <div className="mx-auto">
@@ -48,7 +78,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
 
       {/* Card 2 - Centered */}
       {image2 && name2 && role2 && (
-        <div className="py-8 mt-16 w-[500px] rounded-[40px] border z-10 bg-white shadow-md">
+        <div className="py-8 mt-16 mb-16 w-[500px] rounded-[40px] border z-10 bg-white shadow-md">
           <div className="flex flex-col gap-3">
             <div className="text-center">
               <div className="w-full h-[300px] mx-auto">
@@ -62,6 +92,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
               <div className="text-[#666666] px-12 mt-3">
                 <p>{description}</p>
               </div>
+            
             )}
           </div>
         </div>
@@ -69,7 +100,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
 
       {/* Card 3 - Right side */}
       {image3 && name3 && role3 && (
-        <div className="absolute right-[-190px] top-16 w-[380px] py-14 rounded-[40px] border bg-white shadow-md z-0">
+        <div className="absolute right-[-190px] top-[150px] w-[380px] py-14 rounded-[40px] border bg-white shadow-md z-0">
           <div className="flex flex-col gap-3">
             <div className="text-center">
               <div className="mx-auto">
@@ -80,6 +111,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
             </div>
           </div>
         </div>
+          
       )}
     </div>
   );

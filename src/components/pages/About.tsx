@@ -61,7 +61,8 @@ const About: React.FC = () => {
 
       {/* our story */}
 
-      <div className="flex mt-16 ">
+      <div className="flex mt-24 ">
+        
         <div className="  flex flex-col w-2/3 bg-black px-10 justify-center  text-white">
           <h1 className="text-[64px] font-bold">Our Story</h1>
           <p className="mt-2 font-semibold ">
