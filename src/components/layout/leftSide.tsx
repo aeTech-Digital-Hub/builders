@@ -32,6 +32,8 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 }) => {
   return (
     <div className="flex bg-[#B9BFCD] py-28 px-3 w-full">
+
+     
       <div className="w-[350px] rounded-lg h-[400px] bg-white p-3">
         {/* top */}
         <div className="relative">

@@ -1,16 +1,15 @@
-
-
-import { Swiper, SwiperSlide } from "swiper/react";
+import React, { useState } from "react";
 import PropertyCard from "../layout/leftSide";
 import assets from "../../assets/assests";
-const PropertyCarousel = () => {
-  const propertyData = [
+
+const PropertySection: React.FC = () => {
+  const cards = [
     {
       image: assets.home.graceView,
       tagLeft: "Western",
       tagRight: "C18,000",
       title: "Grace-View Meadows",
-      location: "18, Maccaulay way",
+      location: "18,Maccaulay way",
       city: "Northern",
       bedrooms: 3,
       sofas: 2,
@@ -19,39 +18,74 @@ const PropertyCarousel = () => {
       planImage: assets.home.plans,
       planLink: "#",
     },
-
     {
       image: assets.home.graceView,
       tagLeft: "Western",
       tagRight: "C18,000",
       title: "Grace-View Meadows",
-      location: "18, Maccaulay way",
+      location: "18,Maccaulay way",
       city: "Northern",
       bedrooms: 3,
       sofas: 2,
       washrooms: 4,
       kitchens: 2,
-      planImage: assets.home.plans,
+      planImage: assets.home.plan2,
+      planLink: "#",
+    },
+    {
+      image: assets.home.graceView,
+      tagLeft: "Western",
+      tagRight: "C18,000",
+      title: "Grace-View Meadows",
+      location: "18,Maccaulay way",
+      city: "Northern",
+      bedrooms: 3,
+      sofas: 2,
+      washrooms: 4,
+      kitchens: 2,
+      planImage: assets.home.plan3,
       planLink: "#",
     },
   ];
 
+  const [startIndex, setStartIndex] = useState(0);
+  const cardsPerPage = 2;
+
+  const handlePrev = () => {
+    setStartIndex((prev) => Math.max(0, prev - cardsPerPage));
+  };
+
+  const handleNext = () => {
+    if (startIndex + cardsPerPage < cards.length) {
+      setStartIndex((prev) => prev + cardsPerPage);
+    }
+  };
+
+  const visibleCards = cards.slice(startIndex, startIndex + cardsPerPage);
+
   return (
-    <div className="px-4 py-10 bg-gray-100">
-      <Swiper
-        spaceBetween={20}
-        slidesPerView={2}
-        grabCursor={true}
-        className="w-full"
-      >
-        {propertyData.map((item, index) => (
-          <SwiperSlide key={index}>
-            <PropertyCard {...item} />
-          </SwiperSlide>
+    <div className="flex items-center justify-center bg-[#B9BFCD] py-28 px-6 w-full gap-6">
+      {/* Left Arrow */}
+      <button onClick={handlePrev} disabled={startIndex === 0}>
+        <img src={assets.home.arrowBack} alt="Previous" />
+      </button>
+
+      {/* Property Cards */}
+      <div className="flex gap-6">
+        {visibleCards.map((card, index) => (
+          <PropertyCard key={index} {...card} />
         ))}
-      </Swiper>
+      </div>
+
+      {/* Right Arrow */}
+      <button
+        onClick={handleNext}
+        disabled={startIndex + cardsPerPage >= cards.length}
+      >
+        <img src={assets.home.arrowForword} alt="Next" />
+      </button>
     </div>
   );
 };
 
-export default PropertyCarousel;
+export default PropertySection;

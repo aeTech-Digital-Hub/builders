@@ -5,6 +5,7 @@ import team2 from "./images/about/team2.jpg";
 import team3 from "./images/about/team3.jpg";
 import team4 from "./images/about/team4.jpg";
 import team5 from "./images/about/team5.jpg";
+import team6 from "./images/about/team6.jpg";
 import back from "./images/about/back.jpg";
 import started from "./images/care/started.svg";
 import map from "./images/contact/map.svg";
@@ -45,6 +46,9 @@ import bg3 from "./images/home/bg3.jpg";
 import bg4 from "./images/home/bg4.jpg";
 import bg5 from "./images/home/bg5.jpg";
 import bg10 from "./images/home/bg9.jpg";
+import arrowBack from "./images/home/arrowBack.svg";
+import arrowForword from "./images/home/ArrowForword.svg";
+
 import bg from "./images/home/bg.jpg";
 import accraPlan from "./images/plan/housePlan.png";
 import filter from "./images/plan/filter.png";
@@ -98,6 +102,7 @@ const assets = {
     back,
     team4,
     team5,
+    team6,
   },
   care: {
     started,
@@ -161,6 +166,8 @@ const assets = {
     bg4,
     bg5,
     bg10,
+    arrowForword,
+    arrowBack,
   },
 
   housePlan: {
