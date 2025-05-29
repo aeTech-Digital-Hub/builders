@@ -64,7 +64,7 @@ const PropertySection: React.FC = () => {
   const visibleCards = cards.slice(startIndex, startIndex + cardsPerPage);
 
   return (
-    <div className="flex items-center justify-center bg-[#B9BFCD] py-28 px-6 w-full gap-6">
+    <div className="flex items-center justify-center bg-[#B9BFCD]  w-full gap-6">
       {/* Left Arrow */}
       <button onClick={handlePrev} disabled={startIndex === 0}>
         <img src={assets.home.arrowBack} alt="Previous" />

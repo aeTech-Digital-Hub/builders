@@ -1,4 +1,5 @@
 import React from "react";
+import assets from "../../assets/assests";
 
 interface TeamCardProps {
   image1?: string;
@@ -26,7 +27,10 @@ const TeamCard: React.FC<TeamCardProps> = ({
   role3,
 }) => {
   return (
-    <div className="relative w-full h-auto flex justify-center overflow-hidden">
+    <div
+      className="relative w-full h-auto flex justify-center overflow-hidden bg-cover bg-center"
+      style={{ backgroundImage: `url(${assets.about.bg})` }}
+    >
       {/* Card 1 - Left side */}
       {image1 && name1 && role1 && (
         <div className="absolute left-[-190px] top-16 w-[380px] py-14 rounded-[40px] border bg-white shadow-md z-0">
