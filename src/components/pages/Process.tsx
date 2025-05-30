@@ -1,7 +1,7 @@
-
 import HeroLayout from "../section/hero-layout";
 import assets from "../../assets/assests";
 import Footer from "../layout/Footer";
+
 const Process = () => {
   return (
     <div >
@@ -49,11 +49,6 @@ const Process = () => {
           </div>
 
         </div>
-
-
-
-
-
 
         <div className="">
           <div className="flex justify-end  ">
@@ -190,5 +185,4 @@ const Process = () => {
 
   )
 }
-
 export default Process

@@ -10,7 +10,7 @@ const Header: React.FC=()=>{
     return(
         <header className="px-28 bg-blue ">
             <div className="flex flex-row  items-center gap-[198px]">
-                <div>  <a href='#'><img src ={assest.home.logo}/></a>
+            <div> <Link to ="/"><a href='#'><img src ={assest.home.logo}/></a></Link> 
                 </div>
 
                 <ul className="flex gap-10 text-white items-center text-xl">

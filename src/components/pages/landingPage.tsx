@@ -3,8 +3,8 @@ import Hero from "../section/hero-section";
 import Plan from "../section/Plan";
 import RegionCard from "../section/region";
 import Footer from "../layout/Footer";
-import PropertyCard from "../layout/leftSide";
 import Gallery from "../section/Gallery";
+import PropertySection from "../section/PropertyCarousel";
 
 const Landing: React.FC = () => {
   return (
@@ -58,7 +58,8 @@ const Landing: React.FC = () => {
       </div>
 
       <div className="flex  ">
-        <div className=" w-1/3 flex justify-center  items-center bg-[#E9EAEF] font-semibold">
+        {/* right side */}
+        <div className=" w-2/5 flex justify-center  items-center bg-[#E9EAEF] font-semibold">
           <div className="flex-col justify-center text-center  items-center px-20 ">
             <h1 className="text-[30px] font-semibold ">
               <p className="text-xl mt-10">Get started</p>
@@ -78,51 +79,8 @@ const Landing: React.FC = () => {
         </div>
         {/* left */}
 
-        <div className=" flex bg-[#B9BFCD]     w-full ">
-          <PropertyCard
-            image={assets.home.graceView}
-            tagLeft="Western"
-            tagRight="C18,000"
-            title="Grace-View Meadows"
-            location="18,Maccaulay way"
-            city="Northern"
-            bedrooms={3}
-            sofas={2}
-            washrooms={4}
-            kitchens={2}
-            planImage={assets.home.plans}
-            planLink="#"
-          />
-
-          <PropertyCard
-            image={assets.home.graceView}
-            tagLeft="Western"
-            tagRight="C18,000"
-            title="Grace-View Meadows"
-            location="18,Maccaulay way"
-            city="Northern"
-            bedrooms={3}
-            sofas={2}
-            washrooms={4}
-            kitchens={2}
-            planImage={assets.home.plan2}
-            planLink="#"
-          />
-
-          <PropertyCard
-            image={assets.home.graceView}
-            tagLeft="Western"
-            tagRight="C18,000"
-            title="Grace-View Meadows"
-            location="18,Maccaulay way"
-            city="Northern"
-            bedrooms={3}
-            sofas={2}
-            washrooms={4}
-            kitchens={2}
-            planImage={assets.home.plan3}
-            planLink="#"
-          />
+        <div className=" flex-1 bg-[#B9BFCD]     w-full ">
+          <PropertySection />
         </div>
       </div>
 

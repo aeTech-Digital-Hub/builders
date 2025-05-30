@@ -10,6 +10,7 @@ import Trust from "./components/pages/Trust";
 import Contact from "./components/pages/Contact";
 import TeamCard from "./components/layout/TeamCard";
 import Gallery from "./components/section/Gallery";
+import PropertySection from   "./components/section/PropertyCarousel";
 export default function App() {
 
   const router = createBrowserRouter([
@@ -57,6 +58,13 @@ export default function App() {
       path : '/process',
       element: <Process/>
     },
+
+    {
+      path : '/property',
+      element: < PropertySection/>
+    },
+
+   
 
 
   ]);

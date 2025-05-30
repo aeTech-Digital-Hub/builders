@@ -32,10 +32,17 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
 }) => {
   return (
     <div className="flex bg-[#B9BFCD] py-28 px-3 w-full">
+
+     
       <div className="w-[350px] rounded-lg h-[400px] bg-white p-3">
         {/* top */}
         <div className="relative">
           <img src={image} className="rounded-lg" />
+          <img 
+    src={assets.home.heart} 
+    className="absolute top-4 right-4 w-8 h-8" 
+    alt="Favorite"
+  />
           <div className="w-full bottom-0 absolute text-[14px] text-white py-4 bg-[#00000066] flex justify-between px-4">
             <p>{tagLeft}</p>
             <p>{tagRight}</p>

@@ -6,12 +6,12 @@ import TeamCardRotator from "../section/Team";
 const About: React.FC = () => {
   return (
     <div>
-      <HeroLayout backgroundImage={assets.about.bg}>
+      <HeroLayout backgroundImage={assets.about.bgAbout}>
         <div className="text-white text-center">
           <h1 className="text-[64px] font-bold">
             About Us at
             <br />
-            <span className="text-brown">Honest Builders</span>{" "}
+            <span className="text-brown">Honest Builders</span>
           </h1>
         </div>
       </HeroLayout>
@@ -61,7 +61,8 @@ const About: React.FC = () => {
 
       {/* our story */}
 
-      <div className="flex mt-16 ">
+      <div className="flex mt-24 ">
+        
         <div className="  flex flex-col w-2/3 bg-black px-10 justify-center  text-white">
           <h1 className="text-[64px] font-bold">Our Story</h1>
           <p className="mt-2 font-semibold ">
@@ -80,10 +81,15 @@ const About: React.FC = () => {
             </p>
           </div>
         </div>
-
-        <div className="">
-          <img src={assets.about.story} />
-        </div>
+        
+        <div className="relative">
+  <img src={assets.about.story} className="w-full h-full object-cover" />
+  <div className="absolute inset-0"
+       style={{
+         backgroundImage: 'linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, #000000 90%, #000000 100%)'
+       }}>
+  </div>
+</div>
       </div>
       <Footer />
     </div>
