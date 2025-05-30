@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
       >
         <Head />
         <div className="flex items-center justify-center h-full">
-          <button className="w-[200px] mt-6 h-10 px-4 flex items-center gap-2 text-gray-500 text-xl rounded-lg bg-white shadow-sm">
+          <button className="w-[315px] mt-6 h-10 px-4 flex items-center gap-2 text-gray-500 text-xl rounded-lg bg-white shadow-sm">
             <span>
               <img
                 src={assets.home.search_icon}

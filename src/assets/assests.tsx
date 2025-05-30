@@ -11,12 +11,13 @@ import back from "./images/about/back.jpg";
 import started from "./images/care/started.svg";
 import map from "./images/contact/map.svg";
 import accra from "./images/home/accra.svg";
+import heart from "./images/home/heart.svg";
 import bono from "./images/home/bono.jpg";
 import bonoMap from "./images/home/bonoMap.png";
 import community from "./images/home/community.svg";
 import greater_accra from "./images/home/Greater_Accra.jpg";
-import heaven from "./images/home/heaven.svg";
-import moory from "./images/home/moory.svg";
+import heaven from "./images/home/haven.jpg";
+import moory from "./images/home/moory.jpg";
 import plan from "./images/home/plan.svg";
 import search2 from "./images/home/search2.svg";
 import search_icon from "./images/home/search-icon.svg";
@@ -49,7 +50,6 @@ import bg5 from "./images/home/bg5.jpg";
 import bg10 from "./images/home/bg9.jpg";
 import arrowBack from "./images/home/arrowBack.svg";
 import arrowForword from "./images/home/ArrowForword.svg";
-import bg from "./images/home/bg.jpg";
 import accraPlan from "./images/plan/housePlan.png";
 import filter from "./images/plan/filter.png";
 import image1 from "./images/plan/image1.svg";
@@ -129,6 +129,7 @@ const assets = {
     image5,
   },
   home: {
+    heart,
     accra,
     bonoMap,
     bono,
