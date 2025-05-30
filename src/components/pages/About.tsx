@@ -7,8 +7,8 @@ const About: React.FC = () => {
   return (
     <div>
       <HeroLayout backgroundImage={assets.about.bg}>
-        <div className="text-white   text-center">
-          <h1 className="text-xl font-bold  leading-normal">
+        <div className="text-white text-center">
+          <h1 className="text-[64px] font-bold">
             About Us at
             <br />
             <span className="text-brown">Honest Builders</span>{" "}
@@ -54,10 +54,10 @@ const About: React.FC = () => {
         </p>
 
 
-       
+
       </div>
 
-      <TeamCardRotator/>
+      <TeamCardRotator />
 
       {/* our story */}
 
