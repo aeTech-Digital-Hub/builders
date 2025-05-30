@@ -8,7 +8,7 @@ const Head: React.FC=()=>{
     return(
         <header className="px-28 bg-[#0D162A33] ">
             <div className="flex flex-row  items-center gap-[198px]">
-                <div>  <a href='#'><img src ={assest.home.logo}/></a>
+                <div> <Link to ="/"><a href='#'><img src ={assest.home.logo}/></a></Link> 
                 </div>
 
                 <ul className="flex space-x-16 text-white items-center text-xl">

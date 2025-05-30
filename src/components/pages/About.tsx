@@ -6,9 +6,9 @@ import TeamCardRotator from "../section/Team";
 const About: React.FC = () => {
   return (
     <div>
-      <HeroLayout backgroundImage={assets.about.bg}>
+      <HeroLayout backgroundImage={assets.about.bgAbout}>
         <div className="text-white   text-center">
-          <h1 className="text-xl font-bold  leading-normal">
+          <h1 className="text-[48px] font-bold  leading-normal">
             About Us at
             <br />
             <span className="text-brown">Honest Builders</span>{" "}
@@ -81,10 +81,15 @@ const About: React.FC = () => {
             </p>
           </div>
         </div>
-
-        <div className="">
-          <img src={assets.about.story} />
-        </div>
+        
+        <div className="relative">
+  <img src={assets.about.story} className="w-full h-full object-cover" />
+  <div className="absolute inset-0"
+       style={{
+         backgroundImage: 'linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, #000000 90%, #000000 100%)'
+       }}>
+  </div>
+</div>
       </div>
       <Footer />
     </div>

@@ -30,8 +30,10 @@ const Care = () => {
       </div>
 
       <div
-        className="h-[70vh] bg-cover bg-center py-12 flex items-center"
-        style={{ backgroundImage: `url(${assets.care.image4})` }}
+        className="h-[70vh] bg-cover bg-center py-12 flex items-center mb-24"
+        style={{
+          backgroundImage: `linear-gradient(to right, #000000CC, #070B15D8, #0C1427E1, #131F3CEC, #18274CF5, #1E305E), url(${assets.care.image4})`,
+        }}
       >
         <div className=" flex  flex-col items-center w-2/6 mx-auto">
           <h1 className="text-xl font-semibold text-center text-white">
