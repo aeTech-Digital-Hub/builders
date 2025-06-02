@@ -9,6 +9,7 @@ import team6 from "./images/about/team6.jpg";
 import bgAbout from "./images/about/bg.jpg";
 import back from "./images/about/back.jpg";
 import started from "./images/care/started.svg";
+import bgmobile from "./images/contact/bgmobile.png";
 import map from "./images/contact/map.svg";
 import accra from "./images/home/accra.svg";
 import heart from "./images/home/heart.svg";
