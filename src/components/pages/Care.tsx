@@ -9,7 +9,7 @@ const Care = () => {
         <div className="text-white text-center">
           <h1 className="text-[64px] font-bold  ">
             CUSTOMER CARE <br />
-            WITH A<span className="text-brown px-2">HEART</span>{" "}
+            WITH A<span className="text-brown px-2">Heart</span>{" "}
           </h1>
         </div>
       </HeroLayout>

@@ -23,6 +23,23 @@ const Trust = () => {
             of honesty and transparency.
           </p>
         </div>
+    <div>
+      <HeroLayout backgroundImage={assets.trust.bg6}>
+        <div className="text-white text-center">
+          <h1 className="text-[64px] font-bold  ">
+            How Trust <br />
+            Is
+            <span className="text-brown px-3">Built</span>{" "}
+          </h1>
+        </div>
+      </HeroLayout>
+      <div className="w-2/3 mx-auto py-20">
+        <p className=" text-center text-[32px]">
+          At Honest Builders, we know your home is the most significant
+          investment you'll ever make. Whether this is your first time or your
+          fifth, you're the reason we've built our business on the foundation of
+          honesty and transparency.
+        </p>
       </div>
 
       <div className=" flex  px-28 py-16 items-center  justify-between bg-blue ">
@@ -91,6 +108,14 @@ const Trust = () => {
             We've made trust our cornerstone by building it in to everything we
             do, brick by brick and day after day.
           </p>
+          <img src={assets.trust.badge} className="mx-auto" />
+          <img src={assets.home.logo} className="mx-auto" />
+
+          <p className="text-[32px] font-medium text-white text-center">We've made trust our cornerstone by building it
+            in to everything we do,
+            brick by brick and day after day.</p>
+
+
         </div>
       </div>
 

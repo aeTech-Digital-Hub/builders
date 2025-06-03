@@ -11,7 +11,7 @@ const About: React.FC = () => {
           <h1 className="text-[64px] font-bold  ">
             About Us at
             <br />
-            <span className="text-brown">Honest Builders</span>{" "}
+            <span className="text-brown">Honest Builders</span>
           </h1>
         </div>
       </HeroLayout>
@@ -52,6 +52,9 @@ const About: React.FC = () => {
           Get up close and personal and know more about our people and why you
           can trust your work with us.
         </p>
+
+
+       
       </div>
 
       <TeamCardRotator />
