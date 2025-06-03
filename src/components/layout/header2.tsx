@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
+=======
+import React from "react";
+
+import assest from "../../assets/assests";
+>>>>>>> 9442112 (updated pages to with figma statedd values)
 import { Link } from "react-router-dom";
 import assets from "../../assets/assests";
 
+<<<<<<< HEAD
 interface NavItem {
   name: string;
   href: string;
@@ -111,4 +118,68 @@ const Header: React.FC = () => {
   );
 };
 
+=======
+const Header: React.FC = () => {
+  return (
+    <header className="px-28 bg-blue font-inter ">
+      <div className="flex flex-row  items-center gap-[198px]">
+        <div>
+          {" "}
+          <Link to="/">
+            <img src={assest.home.logo} />
+          </Link>
+        </div>
+
+        <ul className="flex gap-10 text-white items-center text-xl">
+          <li>
+            <Link
+              to="#"
+              className="flex items-center hover:text-blue-500 gap-1"
+            >
+              Find A Home
+              <img src={assest.home.arrowDown} alt="arrow" />
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#"
+              className="flex items-center hover:text-blue-500 gap-1"
+            >
+              Communities
+              <img src={assest.home.arrowDown} alt="arrow" />
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#"
+              className="flex items-center hover:text-blue-500 gap-1"
+            >
+              Plan & Design
+              <img src={assest.home.arrowDown} alt="arrow" />
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#"
+              className="flex items-center hover:text-blue-500 gap-1"
+            >
+              Catalogue
+              <img src={assest.home.arrowDown} alt="arrow" />
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="#"
+              className="flex items-center hover:text-blue-500 gap-1"
+            >
+              Contact Us
+              <img src={assest.home.arrowDown} alt="arrow" />
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </header>
+  );
+};
+>>>>>>> 9442112 (updated pages to with figma statedd values)
 export default Header;
