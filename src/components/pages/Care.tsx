@@ -4,17 +4,17 @@ import Footer from "../layout/Footer";
 
 const Care = () => {
   return (
-    <div>
+    <div className="font-inter">
       <HeroLayout backgroundImage={assets.care.bg8}>
         <div className="text-white text-center">
-          <h1 className="text-5xl font-bold  leading-normal">
+          <h1 className="text-[64px] font-bold  ">
             CUSTOMER CARE <br />
             WITH A<span className="text-brown px-2">HEART</span>{" "}
           </h1>
         </div>
       </HeroLayout>
 
-      <div className="w-2/3 mx-auto text-2xl space-y-8 py-16 text-center ">
+      <div className="w-2/3 mx-auto  space-y-8 py-16 text-center font-normal text-[32px]">
         <p>
           It's one thing to build a dream home, and another to stand behind it.
           And while we take pride in the quality of our work, we want you to
@@ -35,12 +35,12 @@ const Care = () => {
           backgroundImage: `linear-gradient(to right, #000000CC, #070B15D8, #0C1427E1, #131F3CEC, #18274CF5, #1E305E), url(${assets.care.image4})`,
         }}
       >
-        <div className=" flex  flex-col items-center w-2/6 mx-auto">
-          <h1 className="text-xl font-semibold text-center text-white">
+        <div className=" flex  flex-col items-center mx-auto">
+          <h1 className="text-[64px] font-semibold text-center text-white">
             Don't wait for long,
             <br /> let's get <span className="text-brown">started</span>
           </h1>
-          <button className="py-2 px-8 text-2xl rounded-lg mt-8 bg-brown">
+          <button className="py-2 px-12  text-[35.29px]  rounded-lg mt-8 bg-brown">
             Customer Care
           </button>
         </div>

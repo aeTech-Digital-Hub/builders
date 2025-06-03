@@ -2,13 +2,11 @@ import { NavLink } from "react-router-dom";
 
 const Band: React.FC = () => {
   const linkClass = ({ isActive }: { isActive: boolean }) =>
-    isActive
-      ? "border-b-4 border-b-brown" 
-      : "border-b-4 border-transparent"; 
+    isActive ? "border-b-4 border-b-brown" : "border-b-4 border-transparent";
 
   return (
-    <div className="">
-      <div className="flex w-full">
+    <div className="font-inter">
+      <div className="flex w-full ">
         <div className="bg-[#E9EAEF] py-10 px-28 text-xl">
           <NavLink to="/plan" className={linkClass}>
             DISCOVER THE EXPERIENCE
