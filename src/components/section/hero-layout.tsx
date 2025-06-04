@@ -12,7 +12,7 @@ const HeroLayout: React.FC<BackgroundLayoutProps> = ({
   children,
 }) => {
   return (
-    <section className="flex flex-col h-[650px] font-inter overflow-hidden">
+    <section className="flex flex-col font-inter overflow-hidden">
       <div
         className="w-full h-full bg-cover bg-no-repeat bg-center relative flex flex-col"
         style={{ backgroundImage: `url(${backgroundImage})` }}
