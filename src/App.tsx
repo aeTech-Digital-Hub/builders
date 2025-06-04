@@ -5,6 +5,7 @@ import Process from "./components/pages/Process";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Trust from "./components/pages/Trust";
 import Gallery from "./components/section/Gallery";
+import  {HeroSmall}  from "./components/section/HeroSmall";
 export default function App() {
   const router = createBrowserRouter([
     {
@@ -36,6 +37,11 @@ export default function App() {
     {
       path: "/process",
       element: <Process />,
+    },
+
+    {
+      path: "/Small",
+      element:< HeroSmall />,
     },
   ]);
 
