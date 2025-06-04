@@ -37,7 +37,7 @@ const Care = () => {
         url(${assets.care.image4})`, }}      >
         <div className="w-full md:w-2/6 mx-auto flex flex-col items-center py-8 md:py-0">
           <h1 className="sm:text-[64px] text-lg font-bold sm:leading-snug text-center text-white">
-            Don’t wait for long, let’s get <span className="text-brown">started</span>
+            Don&apos;t wait for long, let&apos;s get <span className="text-brown">started</span>
           </h1>
           <button className="mt-6 md:mt-8 sm:p-[18px] p-4 md:px-8 sm:text-[35px] text-lg rounded-lg bg-brown">
             Customer Care
