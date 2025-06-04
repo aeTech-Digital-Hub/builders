@@ -78,6 +78,7 @@ import phase2 from "./images/process/phase2.svg";
 import construct from "./images/process/construction.svg";
 import stars from "./images/trust/star.png";
 import badge from "./images/trust/badge.png";
+import rightArrow from "./images/home/rightArrow.png"
 
 const assets = {
   process: {
@@ -169,6 +170,7 @@ const assets = {
     bg10,
     arrowForword,
     arrowBack,
+    rightArrow
   },
 
   housePlan: {
