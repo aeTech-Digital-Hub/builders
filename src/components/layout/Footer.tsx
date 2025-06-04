@@ -1,13 +1,11 @@
-import assets from '../../assets/assests'
-import { Link } from 'react-router-dom'
+import assets from "../../assets/assests";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <section className="bg-dark_blue text-white px-4 sm:px-8 lg:px-28 py-12 gap-4">
       <div className="flex flex-col">
-        <div className="flex mb-3">
-          <img src={assets.home.logo} alt="Logo" />
-        </div>
+       
 
         <div className="flex justify-center md:justify-start mb-8">
           <img src={assets.home.logo} alt="Honest Builders Logo" className="h-[50px] lg:h-[209px]" />

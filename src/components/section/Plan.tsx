@@ -16,6 +16,7 @@ const Plan: React.FC = () => {
           </h1>
           <p className="text-xl">Let's get you a plan with our </p>
           <a className="text-brown text-[24px] font-semibold">PLAN FINDER</a>
+          <a className="text-brown text-[24px] font-semibold">PLAN FINDER</a>
           <br />
           <button className="py-3 w-[174px] text-white text-xl rounded-lg bg-blue">
             Get Started{" "}

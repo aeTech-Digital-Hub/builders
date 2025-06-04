@@ -11,27 +11,34 @@ export default function App() {
     {
       path: "/",
       element: <Landing />,
+      
     },
 
     {
       path: "/about",
       element: <About />,
+     
     },
 
     {
       path: "/customer-care",
       element: <Care />,
+     
     },
 
     {
       path: "/trust-us",
       element: <Trust />,
+     
     },
+
+   
 
    
     {
       path: "gallery",
       element: <Gallery />,
+     
     },
 
     {
@@ -45,5 +52,6 @@ export default function App() {
     },
   ]);
 
+  return <RouterProvider router={router} />;
   return <RouterProvider router={router} />;
 }
