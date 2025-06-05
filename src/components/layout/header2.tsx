@@ -19,7 +19,7 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="w-full bg-blue px-4 sm:px-28 py-4 relative">
+    <header className="w-full md:bg-blue px-4 sm:px-28 py-4 relative">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <Link to="/">

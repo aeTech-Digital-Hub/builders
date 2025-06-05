@@ -7,7 +7,7 @@ const About: React.FC = () => {
   return (
     <div className="font-inter">
       <HeroLayout backgroundImage={assets.about.bgAbout}>
-        <div className="text-white   text-center">
+        <div className="text-white  h-[550px] flex items-center justify-center text-center">
           <h1 className="text-[64px] font-bold  ">
             About Us at
             <br />

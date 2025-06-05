@@ -31,7 +31,7 @@ const RegionCard: React.FC<RegionCardProps> = ({
         <img
           src={icon}
           alt={`${title} icon`}
-          className="fill-current text-black"
+          className="fill-current text-black "
         />
         <div>
           <button className="py-4 rounded-lg px-12 bg-blue text-white font-bold text-xl">

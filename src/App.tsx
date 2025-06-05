@@ -50,8 +50,10 @@ export default function App() {
       path: "/Small",
       element:< HeroSmall />,
     },
+
+   
   ]);
 
   return <RouterProvider router={router} />;
-  return <RouterProvider router={router} />;
+ 
 }
