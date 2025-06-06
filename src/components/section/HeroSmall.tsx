@@ -1,5 +1,4 @@
 import assets from "../../assets/assests";
-import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import Gallery from "./Gallery";
 import Plan from "./Plan";

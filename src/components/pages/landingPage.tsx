@@ -5,7 +5,6 @@ import RegionCard from "../section/region";
 import Footer from "../layout/Footer";
 import Gallery from "../section/Gallery";
 import PropertySection from "../section/PropertyCarousel";
-import Band from "../layout/band";
 import HeroLayout from "../section/hero-layout";
 const Landing: React.FC = () => {
   return (
