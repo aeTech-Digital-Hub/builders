@@ -80,6 +80,9 @@ import stars from "./images/trust/star.png";
 import badge from "./images/trust/badge.png";
 import rightArrow from "./images/home/rightArrow.png"
 
+
+
+
 const assets = {
   process: {
     bg9,
