@@ -1,4 +1,3 @@
-// src/components/Header.tsx
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import assets from "../../assets/assests";
@@ -62,7 +61,7 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="w-full bg-blue px-4 sm:px-28 py-4 relative">
+    <header className="w-full md:bg-blue px-4 sm:px-28 py-4 relative">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <Link to="/">
