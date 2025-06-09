@@ -62,7 +62,7 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="w-full bg-blue px-4 sm:px-28 py-4 relative">
+    <header className="w-full md:bg-blue px-4 sm:px-28 py-4 relative">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <Link to="/">
@@ -82,13 +82,11 @@ const Header: React.FC = () => {
                 className="flex items-center hover:text-blue-500 gap-4 transition-colors"
               >
                 {item.name}
-                {item.children && (
-                  <img
-                    src={assets.home.arrowDown}
-                    alt="arrow"
-                    className="h-2.5 w-2.5 ml-1"
-                  />
-                )}
+                <img
+                  src={assets.home.arrowDown}
+                  alt="arrow"
+                  className="h-[6px] w-2.5"
+                />
               </Link>
 
               {/* Desktop Hover Dropdown */}
@@ -115,7 +113,7 @@ const Header: React.FC = () => {
           ))}
         </ul>
 
-        {/* Mobile Toggle Button */}
+        {/* Hamburger /  */}
         <button
           className="sm:hidden text-white focus:outline-none z-50"
           onClick={() => {
@@ -127,6 +125,7 @@ const Header: React.FC = () => {
           aria-label="Toggle menu"
         >
           {isMenuOpen ? (
+            
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
