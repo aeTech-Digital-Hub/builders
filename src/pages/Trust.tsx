@@ -1,7 +1,7 @@
-import HeroLayout from "../section/hero-layout";
-import assets from "../../assets/assests";
-import Footer from "../layout/Footer";
-import Testimonial from "../layout/Testimonial";
+import HeroLayout from "../components/section/hero-layout";
+import assets from "../assets/assests";
+import Footer from "../components/layout/Footer";
+import Testimonial from "../components/layout/Testimonial";
 
 const Trust = () => {
   return (
