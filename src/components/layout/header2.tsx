@@ -257,3 +257,4 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+//.... just had to make changes so i could push.
