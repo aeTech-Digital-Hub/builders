@@ -81,6 +81,7 @@ import construct from "./images/process/construction.svg";
 import stars from "./images/trust/star.png";
 import badge from "./images/trust/badge.png";
 import rightArrow from "./images/process/rightArrow.svg"
+import arrowDownBold from "./images/process/arrowDownBold.svg"
 
 
 
@@ -96,6 +97,7 @@ const assets = {
     phase1,
     phase2,
     construct,
+    arrowDownBold
   },
 
   about: {
