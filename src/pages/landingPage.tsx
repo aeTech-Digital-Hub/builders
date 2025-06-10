@@ -223,18 +223,15 @@ const Landing: React.FC = () => {
   <PropertyCarousel/>
 </div>
      {/* mobile recommended and favorites section */}
-      <div
-        className=" container flex md:hidden text-[14px] mb-3 bg-[#DDE0E7] h-[50px]
- w-full "
-      >
-        <div className="flex  items-center  px-20 bg-blue">
-          <p className=" text-brown font-medium ">Recommended</p>
-        </div>
-        <div className="flex  px-12 flex-1 justify-between text-[#00000080] items-center bg-[#DDE0E7]">
-          <p>Favorites</p>
-          <p>Recent Viewing</p>
-        </div>
-      </div>
+<div className="container flex md:hidden text-sm mb-3 bg-[#DDE0E7] h-12 w-full">
+  <div className="flex items-center px-12 sm:px-8 bg-blue flex-shrink-0">
+    <p className="text-brown font-medium">Recommended</p>
+  </div>
+  <div className="flex flex-grow justify-around items-center bg-[#DDE0E7] px-2">
+    <p className="text-[#00000080] text-center px-2">Favorites</p>
+    <p className="text-[#00000080] text-center px-2">Recent Viewing</p>
+  </div>
+</div>
 
       <Gallery />
 

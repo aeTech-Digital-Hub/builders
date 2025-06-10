@@ -23,17 +23,17 @@ const PropertyCard: React.FC<{
   isPartial?: boolean;
 }> = ({ property, isActive = false, isPartial = false }) => {
   return (
-    <div className={`bg-white rounded-lg shadow-lg p-3 transition-all duration-300 ${
-      isActive ? "h-[288px] w-[250px]" : "h-[260px] w-[200px]"
-    } ${
-      isPartial ? "opacity-60" : "opacity-80"
-    }`}>
+    <div
+      className={`bg-white rounded-lg shadow-lg p-3 transition-all duration-300 ${
+        isActive ? "h-[288px] w-[250px]" : "h-[260px] w-[200px]"
+      } ${isPartial ? "opacity-60" : "opacity-80"}`}
+    >
       <div className="relative">
-        <img 
-          src={property.image} 
+        <img
+          src={property.image}
           className={`rounded-lg w-full ${
             isActive ? "h-[140px]" : "h-[120px]"
-          } object-cover`} 
+          } object-cover`}
           alt={property.location}
         />
         <div className="absolute bottom-0 w-full text-xs text-white py-2 bg-black/40 flex justify-between px-4">
@@ -42,41 +42,61 @@ const PropertyCard: React.FC<{
         </div>
       </div>
 
-      <div className={`flex items-center ${
-        isActive ? "gap-4" : "gap-2"
-      } justify-between mt-2`}>
+      <div
+        className={`flex items-center ${
+          isActive ? "gap-4" : "gap-2"
+        } justify-between mt-2`}
+      >
         <div className="space-y-2">
-          <h1 className={`font-semibold ${
-            isActive ? "text-sm" : "text-xs"
-          }`}>{property.location}</h1>
-          <p className={`text-gray-500 ${
-            isActive ? "text-xs" : "text-[11px]"
-          }`}>
-            {property.location1} <span className="font-semibold">{property.place}</span>
+          <h1 className={`font-semibold ${isActive ? "text-sm" : "text-xs"}`}>
+            {property.location}
+          </h1>
+          <p
+            className={`text-gray-500 ${isActive ? "text-xs" : "text-[11px]"}`}
+          >
+            {property.location1}{" "}
+            <span className="font-semibold">{property.place}</span>
           </p>
-          <div className={`flex items-center ${
-            isActive ? "text-xs gap-2" : "text-[11px] gap-1"
-          } text-gray-500`}>
-            <span className="flex"> <img src ={assets.home.bedroom}/>{property.bedrooms} </span>
-            <span className="flex"><img src ={assets.home.bedroom}/>{property.bathrooms} </span>
-            <span className="flex"><img src ={assets.home.bedroom}/>{property.kitchens} </span>
-            <span className="flex"><img src ={assets.home.bedroom}/>{property.garages} </span>
+          <div
+            className={`flex items-center ${
+              isActive ? "text-xs gap-2" : "text-[11px] gap-1"
+            } text-gray-500`}
+          >
+            <span className="flex">
+              {" "}
+              <img src={assets.home.bedroom} />
+              {property.bedrooms}{" "}
+            </span>
+            <span className="flex">
+              <img src={assets.home.bedroom} />
+              {property.bathrooms}{" "}
+            </span>
+            <span className="flex">
+              <img src={assets.home.bedroom} />
+              {property.kitchens}{" "}
+            </span>
+            <span className="flex">
+              <img src={assets.home.bedroom} />
+              {property.garages}{" "}
+            </span>
           </div>
         </div>
 
-        <div className={`flex items-center border border-gray-200 rounded-lg shadow-md ${
-          isActive ? "p-2" : "p-1"
-        } justify-center flex-1 flex-col`}>
-          <img 
-            src={property.plan} 
-            className={`rounded-lg ${
-              isActive ? "h-[50px]" : "h-[40px]"
-            }`} 
+        <div
+          className={`flex items-center border border-gray-200 rounded-lg shadow-md ${
+            isActive ? "p-2" : "p-1"
+          } justify-center flex-1 flex-col`}
+        >
+          <img
+            src={property.plan}
+            className={`rounded-lg ${isActive ? "h-[50px]" : "h-[40px]"}`}
             alt="Floor plan"
           />
-          <p className={`font-medium mt-1 text-brown underline ${
-            isActive ? "text-xs" : "text-[11px]"
-          }`}>
+          <p
+            className={`font-medium mt-1 text-brown underline ${
+              isActive ? "text-xs" : "text-[11px]"
+            }`}
+          >
             {property.planView}
           </p>
         </div>
@@ -86,8 +106,9 @@ const PropertyCard: React.FC<{
 };
 
 const PropertyCarousel: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(2); // Start with middle item centered
-  const sideCardVisibleWidth = 100; //
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const cardWidth = 210;
+  const sideCardVisibleWidth = 100;
 
   const properties: PropertyDetails[] = [
     {
@@ -102,7 +123,7 @@ const PropertyCarousel: React.FC = () => {
       kitchens: "1",
       garages: "1",
       plan: assets.home.plans,
-      planView: "View Plan"
+      planView: "View Plan",
     },
     {
       image: assets.home.graceView,
@@ -116,7 +137,7 @@ const PropertyCarousel: React.FC = () => {
       kitchens: "1",
       garages: "2",
       plan: assets.home.plans,
-      planView: "View Plan"
+      planView: "View Plan",
     },
     {
       image: assets.home.graceView,
@@ -130,7 +151,7 @@ const PropertyCarousel: React.FC = () => {
       kitchens: "1",
       garages: "1",
       plan: assets.home.plans,
-      planView: "View Plan"
+      planView: "View Plan",
     },
     {
       image: assets.home.graceView,
@@ -144,7 +165,7 @@ const PropertyCarousel: React.FC = () => {
       kitchens: "1",
       garages: "1",
       plan: assets.home.plans,
-      planView: "View Plan"
+      planView: "View Plan",
     },
     {
       image: assets.home.graceView,
@@ -158,8 +179,8 @@ const PropertyCarousel: React.FC = () => {
       kitchens: "1",
       garages: "0",
       plan: assets.home.plans,
-      planView: "View Plan"
-    }
+      planView: "View Plan",
+    },
   ];
 
   const handleSwipe = (direction: "left" | "right") => {
@@ -174,15 +195,16 @@ const PropertyCarousel: React.FC = () => {
     onSwipedLeft: () => handleSwipe("left"),
     onSwipedRight: () => handleSwipe("right"),
     trackMouse: true,
-    // preventDefaultTouchmoveEvent: true,
   });
 
   return (
     <div className="relative w-full overflow-hidden py-12 bg-gray-100">
-      <div 
+      <div
         className="flex items-center h-[350px] transition-transform duration-500 ease-out"
         style={{
-          transform: `translateX(calc(50% - ${currentIndex * 210}px))`,
+          transform: `translateX(calc(50% - ${currentIndex * cardWidth}px - ${
+            currentIndex === 0 ? sideCardVisibleWidth / 2 : 0
+          }px))`,
         }}
         {...handlers}
       >
@@ -191,7 +213,8 @@ const PropertyCarousel: React.FC = () => {
           const isLeftmost = index === 0;
           const isRightmost = index === properties.length - 1;
           const shouldPeekLeft = isLeftmost && currentIndex > 0;
-          const shouldPeekRight = isRightmost && currentIndex < properties.length - 1;
+          const shouldPeekRight =
+            isRightmost && currentIndex < properties.length - 1;
           const isPartial = shouldPeekLeft || shouldPeekRight;
 
           return (
@@ -202,12 +225,16 @@ const PropertyCarousel: React.FC = () => {
               }`}
               style={{
                 transform: isActive ? "scale(1)" : "scale(0.9)",
-                marginLeft: shouldPeekLeft ? `-${210 - sideCardVisibleWidth}px` : "0",
-                marginRight: shouldPeekRight ? `-${210 - sideCardVisibleWidth}px` : "0",
+                marginLeft: shouldPeekLeft
+                  ? `-${cardWidth - sideCardVisibleWidth}px`
+                  : "0",
+                marginRight: shouldPeekRight
+                  ? `-${cardWidth - sideCardVisibleWidth}px`
+                  : "0",
               }}
             >
-              <PropertyCard 
-                property={property} 
+              <PropertyCard
+                property={property}
                 isActive={isActive}
                 isPartial={isPartial}
               />
@@ -240,7 +267,7 @@ const PropertyCarousel: React.FC = () => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full transition-all ${
+            className={`w-2 hs-2 rounded-full transition-all ${
               index === currentIndex ? "bg-blue-500 w-4" : "bg-gray-300"
             }`}
           />
