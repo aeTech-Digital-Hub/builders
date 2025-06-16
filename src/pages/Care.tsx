@@ -6,12 +6,13 @@ const Care = () => {
   return (
     <div className="">
       <HeroLayout backgroundImage={assets.care.bg8}>
-        <div className="text-white text-center  h-[550px] flex items-center justify-center">
-          <h1 className="text-[32px] md:text-[64px] lg:text-[64px] font-bold leading-snug">
-            CUSTOMER CARE
-            <br />
-            WITH A<span className="text-brown px-2">Heart</span>
-          </h1>
+        <div className="text-white h-[491px] md:h-[580px] flex items-center justify-center w-full">
+          <div className="text-center w-full md:mt-[280px] mb-[200px]">
+            <h1 className="md:text-[64px] text-center text-[24px] font-bold">
+              Customer Care <br />
+              With A<span className="text-brown px-3"> Heart</span>
+            </h1>
+          </div>
         </div>
       </HeroLayout>
 

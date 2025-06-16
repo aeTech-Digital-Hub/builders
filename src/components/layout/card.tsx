@@ -181,6 +181,7 @@ const PropertyCarousel: React.FC = () => {
       plan: assets.home.plans,
       planView: "View Plan",
     },
+    
   ];
 
   const handleSwipe = (direction: "left" | "right") => {

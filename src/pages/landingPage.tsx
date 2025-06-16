@@ -15,29 +15,29 @@ const Landing: React.FC = () => {
       </div>
       <div className="block md:hidden">
         <HeroLayout backgroundImage={assets.home.bg1}>
-          <div className=" h-[550px] flex flex-col items-center justify-center  text-center">
-            <div className="mx-auto h-[180px]">
+          <div className=" h-[491px] flex flex-col items-center justify-center mt-6  text-center">
+            <div className="mx-auto h-[350px]">
               <h1 className="flex flex-col items-center text-[24px] font-bold text-center">
                 <span className="text-white ">Discover Properties,</span>
                 <span className="text-brown">Build Futures.</span>
-                <button className="w-[87px] h-[27px] text-white rounded-sm text-center mt-6 font-bold text-[10px] bg-blue">
-                  Get Started
-                </button>
               </h1>
-            </div>
+              <button className="w-[87px] h-[27px] text-white rounded-sm text-center mt-3 font-bold text-[10px] bg-blue">
+                Get Started
+              </button>
 
-            <div className="flex items-center justify-center mb-12">
-              <div className="relative w-[112px] text-[7px] mt-8">
-                <input
-                  type="text"
-                  placeholder="Search"
-                  className="w-full h-[21px] pl-12 pr-4 text-gray-500 text-[7px] rounded-lg bg-white shadow-sm outline-none"
-                />
-                <img
-                  src={assets.home.search_icon}
-                  alt="search icon"
-                  className="absolute left-4 top-3 transform -translate-y-1/2 h-3 w-3"
-                />
+              <div className="flex items-center mt-12 justify-center">
+                <div className="relative   w-[112px] text-[7px]">
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    className="w-full h-[21px] pl-12 pr-4 text-gray-500 text-[7px] rounded-lg bg-white shadow-sm outline-none"
+                  />
+                  <img
+                    src={assets.home.search_icon}
+                    alt="search icon"
+                    className="absolute left-4 top-3 transform -translate-y-1/2 h-3 w-3"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -100,7 +100,10 @@ const Landing: React.FC = () => {
           </h1>
         </div>
         {/* map card */}
-        <div className=" container justify-between px-6 flex gap-1 mt-12 ">
+        <div
+          className=" 
+         justify-between px-6 flex gap-2 mt-12 "
+        >
           {/* card1 */}
           <div className=" w-[89px] h-[129px] border  border-spacing-black  bg-blue rounded-lg">
             <div className=" flex justify-center items-center h-[83px]   bg-[#E9EAEF] ">
@@ -217,21 +220,20 @@ const Landing: React.FC = () => {
           </div>
         </div>
       </div>
-      
 
-<div className="md:hidden">
-  <PropertyCarousel/>
-</div>
-     {/* mobile recommended and favorites section */}
-<div className="container flex md:hidden text-sm mb-3 bg-[#DDE0E7] h-12 w-full">
-  <div className="flex items-center px-12 sm:px-8 bg-blue flex-shrink-0">
-    <p className="text-brown font-medium">Recommended</p>
-  </div>
-  <div className="flex flex-grow justify-around items-center bg-[#DDE0E7] px-2">
-    <p className="text-[#00000080] text-center px-2">Favorites</p>
-    <p className="text-[#00000080] text-center px-2">Recent Viewing</p>
-  </div>
-</div>
+      <div className="md:hidden">
+        <PropertyCarousel />
+      </div>
+      {/* mobile recommended and favorites section */}
+      <div className=" flex whitespace-nowrap  overflow-x-auto  md:hidden  text-sm mb-3 bg-[#DDE0E7] h-12 w-full">
+        <div className="flex items-center px-10  bg-blue flex-shrink-0">
+          <p className="text-brown font-medium">Recommended</p>
+        </div>
+        <div className="flex flex-grow justify-between gap-6 px-10 items-center bg-[#DDE0E7] ">
+          <p className="text-[#00000080] text-center ">Favorites</p>
+          <p className="text-[#00000080] text-center ">Recent Viewing</p>
+        </div>
+      </div>
 
       <Gallery />
 

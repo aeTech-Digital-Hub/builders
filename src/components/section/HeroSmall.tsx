@@ -13,7 +13,7 @@ export const HeroSmall = () => {
     <section className="md:hidden font-inter">
       <div
         className="w-full h-[290px] bg-cover bg-center relative text-white "
-        style={{ backgroundImage: `url(${assets.home.bg1})` }}
+        style={{ backgroundImage: `url(${assets.trust.bg6})` }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-[#00000080] z-0"></div>
@@ -49,7 +49,9 @@ export const HeroSmall = () => {
           </div>
         </div>
       </div>
-      {/* white band */}
+     
+      <div>
+       {/* white band */}
       <div className="w-full h-[55px] p-5 flex justify-center items-center bg-[#E9EAEF] ">
         <p className="font-semibold text-[14px] text-[#363636]">
           Discover the experience
@@ -57,7 +59,7 @@ export const HeroSmall = () => {
       </div>
 
       {/* blue band */}
-      <div className="w-full h-[58px] flex  items-center bg-blue">
+      <div className="w-full h-[58px] flex whitespace-nowrap  overflow-x-auto items-center bg-blue">
         <div className="flex  items-center px-8 gap-x-[50px] text-[10px] font-medium text-white">
           <NavLink to="/trust-us" className={linkClass}>
             HOW TRUST IS BUILT
@@ -73,6 +75,7 @@ export const HeroSmall = () => {
             CUSTOMER CARE
           </NavLink>
         </div>
+      </div>
       </div>
       {/*Explore our community  and map cards*/}
       <div className=" mt-5 text-[14px] font-semibold mb-5 px-6">

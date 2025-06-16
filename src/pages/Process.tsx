@@ -5,12 +5,13 @@ const Process = () => {
   return (
     <div className="font-inter">
       <HeroLayout backgroundImage={assets.process.bg9}>
-        <div className="text-white h-[550px] flex items-center justify-center  text-center">
-          <h1 className="text-[64px]  font-bold  ">
-            Our Process is
-            <br />
-            <span className="text-brown">Trustworthy</span>{" "}
-          </h1>
+        <div className="text-white h-[491px] md:h-[580px] flex items-center justify-center w-full">
+          <div className="text-center w-full md:mt-[280px] mb-[200px]">
+            <h1 className="md:text-[64px] text-center text-[24px] font-bold">
+              Our Process is <br />
+              <span className="text-brown px-3">Trustworthy</span>
+            </h1>
+          </div>
         </div>
       </HeroLayout>
 
