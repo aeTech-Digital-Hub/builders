@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../layout/Header2"; // updated Header
+import Header from "../layout/Header2"; 
 import Band from "../layout/Band";
 
 interface BackgroundLayoutProps {
