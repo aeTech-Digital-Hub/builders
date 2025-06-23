@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
 import assets from "../../assets/assests";
 import Head from "../layout/Header";
 import Band from "../layout/Band";
+import { useState,useEffect } from "react";
 
 const backgroundImages = [
   assets.home.bg1,
