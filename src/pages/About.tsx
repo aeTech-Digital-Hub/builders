@@ -1,18 +1,19 @@
-import HeroLayout from "../section/hero-layout";
-import assets from "../../assets/assests";
-import Footer from "../layout/Footer";
-import TeamCardRotator from "../section/Team";
+import HeroLayout from "../components/section/hero-layout";
+import assets from "../assets/assests";
+import Footer from "../components/layout/Footer";
+import TeamCardRotator from "../components/section/Team";
 
 const About: React.FC = () => {
   return (
     <div className="font-inter">
       <HeroLayout backgroundImage={assets.about.bgAbout}>
-        <div className="text-white  h-[550px] flex items-center justify-center text-center">
-          <h1 className="text-[64px] font-bold  ">
-            About Us at
-            <br />
-            <span className="text-brown">Honest Builders</span>{" "}
-          </h1>
+        <div className="text-white h-[491px] md:h-[580px] flex items-center justify-center w-full">
+          <div className="text-center w-full md:mt-[280px] mb-[200px]">
+            <h1 className="md:text-[64px] text-center text-[24px] font-bold">
+              About Us at <br />
+              <span className="text-brown px-3">Honest Builders</span>
+            </h1>
+          </div>
         </div>
       </HeroLayout>
 
@@ -52,12 +53,9 @@ const About: React.FC = () => {
           Get up close and personal and know more about our people and why you
           can trust your work with us.
         </p>
-
-
-       
       </div>
 
-      <TeamCardRotator/>
+      <TeamCardRotator />
 
       {/* our story */}
 
