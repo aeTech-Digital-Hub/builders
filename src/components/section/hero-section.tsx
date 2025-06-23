@@ -1,7 +1,7 @@
 import assets from "../../assets/assests";
-import Head from "../layout/header";
-import Band from "../layout/band";
-import { useState, useEffect } from "react";
+import Head from "../layout/Header";
+import Band from "../layout/Band";
+import { useState,useEffect } from "react";
 
 const backgroundImages = [
   assets.home.bg1,
@@ -25,16 +25,19 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="flex flex-col h-screen font-inter overflow-hidden">
+    <section className="flex flex-col h-[900px] font-inter overflow-hidden">
       <div
         className="w-full h-full bg-cover bg-center relative transition-all duration-1000 ease-in-out"
         style={{
           backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
         }}
       >
-        <Head />
+        <div className="w-full fixed">
+        <Head/>
+        </div>
+       
         <div className="flex items-center justify-center h-[880px] ">
-          <div className="relative w-[315px]  text-xl  mt-6">
+          <div className="relative w-[315px]  text-xl  mt-[480px]">
             <input
               type="text"
               placeholder="Search"
